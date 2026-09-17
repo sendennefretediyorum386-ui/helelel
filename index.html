@@ -160,17 +160,7 @@
         init();
         animate();
     </script>
-    <audio autoplay loop src="sarki.mp3"></audio>
-    <audio id="bgMusic" loop src="sarki.mp3"></audio>
+    
 
-<script>
-    // Ekrana ilk dokunuşta veya tıklamada müziği başlatır
-    function startAudio() {
-        const audio = document.getElementById('bgMusic');
-        audio.play().catch(e => console.log("Ses başlatılamadı:", e));
-    }
-    window.addEventListener('click', startAudio, { once: true });
-    window.addEventListener('touchstart', startAudio, { once: true });
-</script>
 </body>
 </html>
